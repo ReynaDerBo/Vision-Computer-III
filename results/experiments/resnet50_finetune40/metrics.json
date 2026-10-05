@@ -1,0 +1,4 @@
+{
+  "experiment": "resnet50_finetune40",
+  "accuracy": 0.675
+}

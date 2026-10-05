@@ -1,0 +1,4 @@
+{
+  "experiment": "resnet50_clahe_no_ft",
+  "accuracy": 0.625
+}

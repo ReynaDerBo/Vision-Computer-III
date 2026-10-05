@@ -1,0 +1,21 @@
+{
+  "experiment": "resnet50_finetune40",
+  "classes": [
+    "benign",
+    "malignant",
+    "normal"
+  ],
+  "image_size": [
+    224,
+    224
+  ],
+  "batch_size": 2,
+  "epochs_requested": 30,
+  "epochs_completed": 22,
+  "learning_rate": 0.0001,
+  "trainable_layers": 40,
+  "clahe": false,
+  "test_accuracy": 0.675,
+  "model_path": "/content/drive/MyDrive/VisionComputerIII/models/final/resnet50_finetune40.keras",
+  "checkpoint_path": "/content/drive/MyDrive/VisionComputerIII/models/checkpoints/resnet50_finetune40.keras"
+}
