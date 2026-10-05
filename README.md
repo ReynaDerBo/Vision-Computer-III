@@ -25,3 +25,7 @@ Contiene los siguientes componentes y experimentos:
 El flujo general del proyecto es:
 
 **Datos → Preprocesamiento → Generadores → Modelo → Entrenamiento → Evaluación → Resultados**
+
+## Reporte tecnico
+
+Se explica el desarrollo del experimento en el reporte tecnico comparando resultados y analizando las diferentes versiones obtenidas.
