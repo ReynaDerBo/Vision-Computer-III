@@ -1,0 +1,12 @@
+# Dependencies observed/used by the original notebook.
+# Versions below reflect the notebook's explicit pins where present.
+numpy==1.26.0
+pandas==2.1.4
+scipy==1.11.4
+scikit-learn==1.4.2
+opencv-python-headless==4.9.0.80
+mealpy==3.0.3
+
+# ML / plotting dependencies used by the notebook.
+tensorflow
+matplotlib

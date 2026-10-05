@@ -1,0 +1,45 @@
+project:
+  name: SmartEye
+  num_classes: 3
+  classes:
+    - benign
+    - malignant
+    - normal
+
+data:
+  image_size: [224, 224]
+  color_mode: grayscale
+  batch_size: 2
+  seed: 42
+  rescale: 0.00392156862745098
+  clahe: false
+
+model:
+  name: vit
+  pretrained: google/vit-base-patch16-224
+  fine_tuning: false
+  trainable_layers: 0
+  #name: resnet50
+  #pretrained: imagenet
+  #fine_tuning: false
+  #trainable_layers: 40
+
+training:
+  epochs: 30
+  learning_rate: 0.0001
+
+features:
+  additional_metadata: false
+  tipo_a:
+    rayos_x: 1
+  tipo_b:
+    ultrasonido: 1
+
+paths:
+  csv: data/raw/input_final.csv
+  dataset: data/raw/BUTData
+  checkpoints: models/checkpoints
+  final_model: models/final
+  metrics: results/metrics
+  figures: results/figures
+  confusion_matrices: results/confusion_matrices
