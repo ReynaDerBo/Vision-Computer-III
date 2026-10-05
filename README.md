@@ -1,28 +1,27 @@
-# SmartEye — Project Structure
+# SmartEye — Estructura del proyecto
 
-Scaffold reorganized from `SmartEye_original.ipynb`.
+## Concepto actual del proyecto
 
-## Current project concept
+Clasificación de Imágenes Médicas para Detección de Cancer de Mama mediante Aprendizaje Profundo con ResNet50, Mejora de Contraste CLAHE e Integracion Multimodal de Características Auxiliares *
 
-The original notebook contains:
-- Image classification with 3 classes: `benign`, `malignant`, `normal`
-- Grayscale images resized to 224x224
-- ResNet50 pretrained on ImageNet
-- Grayscale -> RGB conversion before ResNet50
-- Image-only and multimodal/hybrid model experiments
-- Metadata features `tipo A` (rayos X) and `tipo B` (ultrasonido)
-- Optional CLAHE preprocessing
-- Fine-tuning experiments
-- Evaluation/plots/confusion matrix
-- Ant Lion Optimizer / MEALPY-related experimentation
+## Estructura
+Contiene los siguientes componentes y experimentos:
 
-## Intended flow
+- Clasificación de imágenes en 3 clases: `benign`, `malignant` y `normal`.
+- Imágenes en escala de grises redimensionadas a `224x224` píxeles.
+- Uso de **ResNet50** preentrenada con **ImageNet**.
+- Uso de **ViT** preentrenada como segundo modelo de comparación.
+- Conversión de imágenes de escala de grises a **RGB** antes de ingresarlas a ResNet50.
+- Experimentos con modelos basados exclusivamente en imágenes y modelos **multimodales/híbridos**.
+- Incorporación de variables de metadatos:
+  - `tipo A`: radiografías.
+  - `tipo B`: imágenes de ultrasonido.
+- Uso opcional de **CLAHE** como técnica de preprocesamiento.
+- Experimentos de **fine-tuning** de la red preentrenada.
+- Evaluación del modelo mediante métricas, gráficos y **matrices de confusión**.
 
-data -> preprocessing -> generators -> model -> training -> evaluation -> results
+## Flujo previsto
 
-## Important
+El flujo general del proyecto es:
 
-This is a scaffold, not a replacement of the original notebook.
-`SmartEye_original.ipynb` is included at the project root for reference.
-
-Paths and environment-specific Colab code have intentionally not been made authoritative yet.
+**Datos → Preprocesamiento → Generadores → Modelo → Entrenamiento → Evaluación → Resultados**
